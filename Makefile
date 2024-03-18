@@ -10,4 +10,7 @@ publish:
 	npm publish --dry-run
 
 lint:
-    npx eslint .
+	npx eslint .
+
+brain-even:
+	node /Users/alesya/qa-auto-engineer-javascript-project-44/bin/brain-even.js
