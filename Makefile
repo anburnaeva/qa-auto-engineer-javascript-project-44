@@ -14,3 +14,6 @@ lint:
 
 brain-even:
 	node /Users/alesya/qa-auto-engineer-javascript-project-44/bin/brain-even.js
+
+brain-calc:
+	node /Users/alesya/qa-auto-engineer-javascript-project-44/bin/brain-calc.js

@@ -1,22 +1,24 @@
 import readlineSync from "readline-sync";
 
-// Функция для генерации случайного числа
-const generateRandomNumber = (min, max) =>
-  Math.floor(Math.random() * (max - min + 1)) + min;
+import { greeting } from "../src/index.js";
 
-// Функция для проверки чётности числа
-const isEven = (num) => num % 2 === 0;
+import { askName } from "../src/index.js";
+
+import { generateRandomNumber } from "../src/index.js";
+
+import { isEven } from "../src/index.js";
 
 // Функция для запуска игры
+
 const startBrainEvenGame = () => {
-  console.log("Welcome to the Brain Games!");
-  const name = readlineSync.question("May I have your name? ");
-  console.log(`Hello, ${name}!`);
+  greeting();
+  const name = askName();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   let correctAnswersCount = 0;
 
   // Цикл для трёх раундов игры
+
   while (correctAnswersCount < 3) {
     const randomNumber = generateRandomNumber(1, 100);
     console.log(`Question: ${randomNumber}`);
