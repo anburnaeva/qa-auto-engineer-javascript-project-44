@@ -37,3 +37,17 @@ export const generateRandomExpression = () => {
 
   return `${operand1} ${operator} ${operand2}`;
 };
+
+//Функция для определения НОД
+
+export const findGCD = (a, b) => {
+  // Находим остаток от деления большего числа на меньшее
+  let remainder;
+  while (b !== 0) {
+    remainder = a % b;
+    a = b;
+    b = remainder;
+  }
+  // Возвращаем наибольший делитель, который оказался равным b
+  return a;
+};

@@ -7,3 +7,5 @@
 [Asciinema Step 5](https://asciinema.org/a/AT7Gaa7Ej9c7r4oADVgagoXLv)
 
 [Asciinema Step 6](https://asciinema.org/a/KGBhSEl1v50wjC208zeI2XOK0)
+
+[Asciinema Step 7](https://asciinema.org/a/GZSQaf1QY3etd716wE5C8NWcO)
