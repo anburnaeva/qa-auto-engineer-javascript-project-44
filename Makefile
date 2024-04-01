@@ -1,9 +1,6 @@
 install:
 	npm ci
 
-brain-games:
-	node /Users/alesya/qa-auto-engineer-javascript-project-44/bin/brain-games.js
-
 .PHONY: make brain-games
 
 publish:
@@ -12,17 +9,20 @@ publish:
 lint:
 	npx eslint .
 
+brain-games:
+	node bin/brain-games.js
+
 brain-even:
-	node /Users/alesya/qa-auto-engineer-javascript-project-44/bin/brain-even.js
+	node bin/brain-even.js
 
 brain-calc:
-	node /Users/alesya/qa-auto-engineer-javascript-project-44/bin/brain-calc.js
+	node bin/brain-calc.js
 
 brain-gcd:
-	node /Users/alesya/qa-auto-engineer-javascript-project-44/bin/brain-gcd.js
+	node bin/brain-gcd.js
 
 brain-progression:
-	node /Users/alesya/qa-auto-engineer-javascript-project-44/bin/brain-progression.js
+	node bin/brain-progression.js
 
 brain-prime:
-	node /Users/alesya/qa-auto-engineer-javascript-project-44/bin/brain-prime.js
+	node bin/brain-prime.js
