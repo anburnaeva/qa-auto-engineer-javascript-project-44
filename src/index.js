@@ -51,3 +51,48 @@ export const findGCD = (a, b) => {
   // Возвращаем наибольший делитель, который оказался равным b
   return a;
 };
+
+export const getProgression = (start, length) => {
+  const difference = generateRandomNumber(2, 4);
+  const hiddenIndex = generateRandomNumber(0, length - 1);
+
+  let result = [];
+  let hiddenNumber;
+
+  // Вычисляем каждый элемент прогрессии и добавляем его в массив
+
+  for (let i = 0; i < length; i++) {
+    const nextNum = start + i * difference;
+
+    if (i === hiddenIndex) {
+      hiddenNumber = nextNum;
+      result.push(".."); // Заменяем случайное число двумя точками
+    } else {
+      result.push(nextNum); // Генерируем элементы прогрессии
+    }
+  }
+
+  return {
+    list: result,
+    hiddenNumber,
+  };
+};
+
+export const isPrimeNumber = (n) => {
+  if (n <= 1) {
+    return false;
+  }
+  if (n === 2) {
+    return true;
+  }
+  if (n % 2 === 0) {
+    return false; // Проверка на чётность, исключаем чётные числа, кроме 2
+  }
+  for (let i = 3; i <= Math.sqrt(n); i += 2) {
+    // Проверяем только нечётные делители
+    if (n % i === 0) {
+      return false; // Найден делитель, число составное
+    }
+  }
+  return true; // Если не найдено делителей, кроме 1 и самого числа, то число простое
+};

@@ -4,8 +4,22 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/d7ffdf8bb98919d80d02/maintainability)](https://codeclimate.com/github/anburnaeva/qa-auto-engineer-javascript-project-44/maintainability)
 
-[Asciinema Step 5](https://asciinema.org/a/AT7Gaa7Ej9c7r4oADVgagoXLv)
+### Step 5
 
-[Asciinema Step 6](https://asciinema.org/a/KGBhSEl1v50wjC208zeI2XOK0)
+[![asciicast](https://asciinema.org/a/AT7Gaa7Ej9c7r4oADVgagoXLv.svg)](https://asciinema.org/a/AT7Gaa7Ej9c7r4oADVgagoXLv)
 
-[Asciinema Step 7](https://asciinema.org/a/GZSQaf1QY3etd716wE5C8NWcO)
+### Step 6
+
+[![asciicast](https://asciinema.org/a/KGBhSEl1v50wjC208zeI2XOK0.svg)](https://asciinema.org/a/KGBhSEl1v50wjC208zeI2XOK0)
+
+### Step 7
+
+[![asciicast](https://asciinema.org/a/GZSQaf1QY3etd716wE5C8NWcO.svg)](https://asciinema.org/a/GZSQaf1QY3etd716wE5C8NWcO)
+
+### Step 8
+
+[![asciicast](https://asciinema.org/a/AYhoGFMjN1fs2A0LaNS0HT2QD.svg)](https://asciinema.org/a/AYhoGFMjN1fs2A0LaNS0HT2QD)
+
+### Step 9
+
+[![asciicast](https://asciinema.org/a/WHZleYCxcW5QannIq6JzjB1yY.svg)](https://asciinema.org/a/WHZleYCxcW5QannIq6JzjB1yY)

@@ -20,3 +20,9 @@ brain-calc:
 
 brain-gcd:
 	node /Users/alesya/qa-auto-engineer-javascript-project-44/bin/brain-gcd.js
+
+brain-progression:
+	node /Users/alesya/qa-auto-engineer-javascript-project-44/bin/brain-progression.js
+
+brain-prime:
+	node /Users/alesya/qa-auto-engineer-javascript-project-44/bin/brain-prime.js
