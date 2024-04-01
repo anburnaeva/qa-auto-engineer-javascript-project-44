@@ -1,21 +1,18 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
-//Функция для приветствия
+// Функция для приветствия
 
 export const greeting = () => {
-  console.log("Welcome to the Brain Games!");
+  console.log('Welcome to the Brain Games!');
 };
 
-//Функция для вопроса об имени
+// Функция для вопроса об имени
 
-export const askName = () => {
-  return readlineSync.question("May I have your name? ");
-};
+export const askName = () => readlineSync.question('May I have your name? ');
 
 // Функция для генерации случайного числа
 
-export const generateRandomNumber = (min, max) =>
-  Math.floor(Math.random() * (max - min + 1)) + min;
+export const generateRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 // Функция для проверки чётности числа
 export const isEven = (num) => num % 2 === 0;
@@ -23,12 +20,12 @@ export const isEven = (num) => num % 2 === 0;
 // Функция для выбора оператора
 
 export const getRandomOperator = () => {
-  const operators = ["+", "-", "*"];
+  const operators = ['+', '-', '*'];
   const randomIndex = generateRandomNumber(0, operators.length - 1);
   return operators[randomIndex];
 };
 
-//Функция для генерации выражения
+// Функция для генерации выражения
 
 export const generateRandomExpression = () => {
   const operand1 = generateRandomNumber(1, 10);
@@ -38,14 +35,16 @@ export const generateRandomExpression = () => {
   return `${operand1} ${operator} ${operand2}`;
 };
 
-//Функция для определения НОД
+// Функция для определения НОД
 
 export const findGCD = (a, b) => {
   // Находим остаток от деления большего числа на меньшее
   let remainder;
   while (b !== 0) {
     remainder = a % b;
+    // eslint-disable-next-line no-param-reassign
     a = b;
+    // eslint-disable-next-line no-param-reassign
     b = remainder;
   }
   // Возвращаем наибольший делитель, который оказался равным b
@@ -56,17 +55,17 @@ export const getProgression = (start, length) => {
   const difference = generateRandomNumber(2, 4);
   const hiddenIndex = generateRandomNumber(0, length - 1);
 
-  let result = [];
+  const result = [];
   let hiddenNumber;
 
   // Вычисляем каждый элемент прогрессии и добавляем его в массив
 
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < length; i += 1) {
     const nextNum = start + i * difference;
 
     if (i === hiddenIndex) {
       hiddenNumber = nextNum;
-      result.push(".."); // Заменяем случайное число двумя точками
+      result.push('..'); // Заменяем случайное число двумя точками
     } else {
       result.push(nextNum); // Генерируем элементы прогрессии
     }

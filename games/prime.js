@@ -1,8 +1,11 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
-import { generateRandomNumber, greeting, isPrimeNumber } from "../src/index.js";
-
-import { askName } from "../src/index.js";
+import {
+  generateRandomNumber,
+  greeting,
+  isPrimeNumber,
+  askName,
+} from '../src/index.js';
 
 // Функция для запуска игры
 
@@ -23,19 +26,19 @@ const startPrime = () => {
 
     console.log(`Question: ${number}`);
 
-    const userAnswer = readlineSync.question("Your answer: ");
+    const userAnswer = readlineSync.question('Your answer: ');
 
-    const correctAnswer = isPrimeNumber(number) ? "yes" : "no";
+    const correctAnswer = isPrimeNumber(number) ? 'yes' : 'no';
 
     if (userAnswer.toLowerCase() !== correctAnswer) {
-      console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
-      );
+      const message = `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`;
+      console.log(message);
       console.log(`Let's try again, ${name}!`);
+
       return;
     }
 
-    console.log("Correct!");
+    console.log('Correct!');
     correctAnswersCount += 1;
   }
 

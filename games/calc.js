@@ -1,10 +1,5 @@
-import readlineSync from "readline-sync";
-
-import { greeting } from "../src/index.js";
-
-import { askName } from "../src/index.js";
-
-import { generateRandomExpression } from "../src/index.js";
+import readlineSync from 'readline-sync';
+import { greeting, askName, generateRandomExpression } from '../src/index.js';
 
 // Функция для запуска игры
 
@@ -12,7 +7,7 @@ const startCalc = () => {
   greeting();
   const name = askName();
   console.log(`Hello, ${name}!`);
-  console.log("What is the result of the expression?");
+  console.log('What is the result of the expression?');
 
   let correctAnswersCount = 0;
 
@@ -22,19 +17,18 @@ const startCalc = () => {
     const randomExpression = generateRandomExpression();
     console.log(`Question: ${randomExpression}`);
 
-    const userAnswer = readlineSync.question("Your answer: ");
+    const userAnswer = readlineSync.question('Your answer: ');
 
+    // eslint-disable-next-line no-eval
     const correctAnswer = eval(randomExpression);
 
     if (String(userAnswer) !== String(correctAnswer)) {
-      console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
-      );
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
 
-    console.log("Correct!");
+    console.log('Correct!');
     correctAnswersCount += 1;
   }
 

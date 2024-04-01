@@ -1,10 +1,5 @@
-import readlineSync from "readline-sync";
-
-import { greeting } from "../src/index.js";
-
-import { askName } from "../src/index.js";
-
-import { getProgression } from "../src/index.js";
+import readlineSync from 'readline-sync';
+import { greeting, askName, getProgression } from '../src/index.js';
 
 // Функция для запуска игры
 
@@ -14,7 +9,7 @@ const startProgression = () => {
   const name = askName();
 
   console.log(`Hello, ${name}!`);
-  console.log("What number is missing in the progression?");
+  console.log('What number is missing in the progression?');
 
   let correctAnswersCount = 0;
 
@@ -25,19 +20,19 @@ const startProgression = () => {
 
     console.log(`Question: ${progression.list}`);
 
-    const userAnswer = readlineSync.question("Your answer: ");
+    const userAnswer = readlineSync.question('Your answer: ');
 
     const correctAnswer = progression.hiddenNumber;
 
     if (String(userAnswer) !== String(correctAnswer)) {
-      console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
-      );
+      const message = `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`;
+      console.log(message);
       console.log(`Let's try again, ${name}!`);
+
       return;
     }
 
-    console.log("Correct!");
+    console.log('Correct!');
     correctAnswersCount += 1;
   }
 
