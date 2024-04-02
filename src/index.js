@@ -11,7 +11,7 @@ export const greeting = () => {
 export const askName = () => {
   const name = readlineSync.question('May I have your name?');
 
-  return name;
+  console.log(`Hello, ${name}!`);
 };
 
 // Функция для генерации случайного числа
