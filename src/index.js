@@ -8,11 +8,7 @@ export const greeting = () => {
 
 // Функция для вопроса об имени
 
-export const askName = () => {
-  const name = readlineSync.question('May I have your name?');
-
-  console.log(`Hello, ${name}!`);
-};
+export const askName = () => readlineSync.question('May I have your name?');
 
 // Функция для генерации случайного числа
 

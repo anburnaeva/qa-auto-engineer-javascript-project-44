@@ -12,6 +12,7 @@ import {
 const startBrainEvenGame = () => {
   greeting();
   const name = askName();
+  console.log(`Hello, ${name}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   let correctAnswersCount = 0;
