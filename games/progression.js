@@ -18,7 +18,7 @@ const startProgression = () => {
   while (correctAnswersCount < 3) {
     const progression = getProgression(3, 10);
 
-    console.log(`Question: ${progression.list}`);
+    console.log(`Question: ${progression.list.join(' ')}`);
 
     const userAnswer = readlineSync.question('Your answer: ');
 

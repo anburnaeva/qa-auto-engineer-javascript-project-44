@@ -12,8 +12,11 @@ export const askName = () => readlineSync.question('May I have your name?');
 
 // Функция для генерации случайного числа
 
-export const generateRandomNumber = (min, max) =>
-  Math.floor(Math.random() * (max - min + 1)) + min;
+export const generateRandomNumber = (min, max) => {
+  const random = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  return random;
+};
 
 // Функция для проверки чётности числа
 export const isEven = (num) => num % 2 === 0;
