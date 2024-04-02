@@ -3,4 +3,6 @@ import { greeting, askName } from '../src/index.js';
 
 greeting();
 
-askName();
+const name = askName();
+
+console.log(`Hello, ${name}!`);
